@@ -1,836 +1,453 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<title>DrLiTRosS - Desarrollador y Programador en Python</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="RanGO Project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
-<link href="plugins/icon-font/styles.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DrLiTRosS - Python Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-<div class="super_container">
-	
-	<!-- Header -->
-
-	<header class="header d-flex flex-row justify-content-end align-items-center trans_200">
-		
-		<!-- Logo -->
-		<div class="logo mr-auto">
-			<a href="#">Dr<span>LiTRos$</span></a>
-		</div>
-
-		<!-- Navigation -->
-		<nav class="main_nav justify-self-end text-right">
-			<ul>
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="about.html">Sobre mí</a></li>
-				<li><a href="services.html">Servicios</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			
-			<!-- Search -->
-			<div class="search">
-				<div class="search_content d-flex flex-column align-items-center justify-content-center">
-					<div class="search_button d-flex flex-column align-items-center justify-content-center">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							width="18px" height="18px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-							<g>
-								<g>
-									<path class="search_path" fill="#FFFFFF" d="M89.354,10.609c-14.144-14.146-37.157-14.146-51.301,0c-6.852,6.853-10.625,15.964-10.625,25.655
-										c0,8.829,3.132,17.174,8.87,23.771l-4.32,4.321l-4.402-4.403c-0.482-0.482-1.137-0.754-1.819-0.754s-1.337,0.271-1.819,0.754
-										L3.31,80.584c-2.148,2.147-3.331,5.004-3.331,8.042s1.183,5.895,3.331,8.042C5.457,98.817,8.313,100,11.35,100
-										c3.038,0,5.894-1.184,8.041-3.331l20.627-20.631c0.482-0.482,0.753-1.137,0.753-1.819s-0.271-1.337-0.753-1.819l-4.403-4.403
-										l4.322-4.322c6.795,5.902,15.28,8.855,23.766,8.855c9.289,0,18.579-3.537,25.65-10.61c6.852-6.853,10.625-15.963,10.625-25.654
-										C99.979,26.573,96.205,17.462,89.354,10.609z M15.753,93.029c-1.176,1.177-2.739,1.824-4.403,1.824
-										c-1.663,0-3.227-0.648-4.403-1.824c-1.176-1.176-1.823-2.74-1.823-4.403s0.647-3.228,1.824-4.403L18.458,72.71l8.805,8.807
-										L15.753,93.029z M30.902,77.878l-8.805-8.807l3.659-3.66l8.806,8.808L30.902,77.878z M85.715,58.28
-										c-12.137,12.14-31.886,12.14-44.023,0c-5.88-5.881-9.118-13.699-9.118-22.016c0-8.316,3.238-16.135,9.118-22.016
-										c6.069-6.069,14.041-9.104,22.012-9.104c7.972,0,15.943,3.035,22.013,9.104c5.88,5.881,9.117,13.699,9.117,22.016
-										S91.596,52.399,85.715,58.28z"></path>
-								</g>
-							</g>
-							<g>
-								<g>
-									<path class="search_path" fill="#FFFFFF" d="M81.47,18.495c-9.797-9.798-25.736-9.798-35.533,0c-9.796,9.798-9.796,25.741,0,35.539
-										c4.898,4.898,11.333,7.349,17.766,7.349c6.435,0,12.868-2.45,17.767-7.349l0,0C91.266,44.235,91.266,28.293,81.47,18.495z
-										 M77.831,50.395c-7.79,7.791-20.466,7.791-28.256,0c-7.79-7.792-7.79-20.469,0-28.261c3.896-3.896,9.011-5.843,14.128-5.843
-										c5.116,0,10.233,1.948,14.128,5.843C85.621,29.925,85.621,42.603,77.831,50.395z"></path>
-								</g>
-							</g>
-							<g>
-								<g>
-									<path class="search_path" fill="#FFFFFF" d="M73.283,26.683c-5.282-5.283-13.877-5.283-19.16,0c-1.004,1.005-1.004,2.634,0,3.639
-										c1.005,1.005,2.634,1.005,3.639,0c3.276-3.276,8.607-3.276,11.884,0c0.502,0.503,1.16,0.754,1.818,0.754
-										c0.659,0,1.317-0.251,1.819-0.754C74.288,29.317,74.288,27.688,73.283,26.683z"></path>
-								</g>
-							</g>
-						</svg>
-					</div>
-
-					<form id="search_form" class="search_form bez_1">
-						<input type="search" class="search_input bez_1">
-					</form>
-
-				</div>
-			</div>
-		</nav>
-
-		<!-- Hamburger -->
-		<div class="hamburger_container bez_1">
-			<i class="fas fa-bars trans_200"></i>
-		</div>
-		
-	</header>
-
-	<!-- Menu -->
-
-	<div class="menu_container">
-		<div class="menu menu_mm text-right">
-			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
-			<ul class="menu_mm">
-				<li class="menu_mm active"><a href="#">Inicio</a></li>
-				<li class="menu_mm"><a href="about.html">Sobre mí</a></li>
-				<li class="menu_mm"><a href="services.html">Servicios</a></li>
-				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
-				<li class="menu_mm"><a href="contact.html">Contacto</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Home -->
-
-	<div class="home">
-		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/slider_background.jpg)"></div>
-		</div>
-		
-		<!-- Hero Slider -->
-		<div class="hero_slider_container">
-			
-			<!-- Slider -->
-			<div class="owl-carousel owl-theme hero_slider">
-
-				<!-- Slider Item -->
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
-					<span>Made in</span>
-					<span>Python</span>
-					<span>Machine 
-					<br />
-					Learning</span>
-					<span>DrLiTRos$</span>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
-					<span>Made in</span>
-					<span>Python</span>
-					<span>Web Scraping</span>
-					<span>DrLiTRos$</span>
-				</div>
-				
-				<!-- Slider Item -->
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
-					<span>Made in</span>
-					<span>Python</span>
-					<span>Estadísticas</span>
-					<span>DrLiTRos$</span>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item hero_slider_item item_1 d-flex flex-column align-items-center justify-content-center">
-					<span>Made in</span>
-					<span>Python</span>
-					<span>Bots</span>
-					<span>DrLiTRos$</span>
-				</div>
-
-			</div>
-			
-			<!-- Hero Slider Navigation Left -->
-			<div class="hero_slider_nav hero_slider_nav_left">
-				<div class="hero_slider_prev d-flex flex-column align-items-center justify-content-center trans_200">
-					<i class="fas fa-chevron-left trans_200"></i>
-				</div>
-			</div>
-
-			<!-- Hero Slider Navigation Right -->
-			<div class="hero_slider_nav hero_slider_nav_right">
-				<div class="hero_slider_next d-flex flex-column align-items-center justify-content-center trans_200">
-					<i class="fas fa-chevron-right trans_200"></i>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="hero_side_text_container">
-			<div class="double_arrow_container d-flex flex-column align-items-center justify-content-center">
-				<div class="double_arrow nav_links" data-scroll-to=".icon_boxes">
-					<i class="fas fa-chevron-left trans_200"></i>
-					<i class="fas fa-chevron-left trans_200"></i>
-				</div>
-			</div>
-			<div class="hero_side_text">
-				<h2>Modern design easy to use</h2>
-				<p>Maecenas id orci rutrum, vehicula nunc sit amet, fringilla ante. Nulla efficitur vitae ligula commodo varius.</p>
-			</div>
-		</div>
-		
-		<div class="next_section_scroll">
-			<div class="next_section nav_links" data-scroll-to=".icon_boxes">
-				<i class="fas fa-chevron-down trans_200"></i>
-				<i class="fas fa-chevron-down trans_200"></i>
-			</div>
-		</div>
-			
-	</div>
-
-	<!-- Icon Boxes -->
-
-	<div class="icon_boxes">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="icon_box_title">
-						<h1>Build your entire website in minutes</h1>
-					</div>
-					<div class="button icon_box_button trans_200">
-						<a href="#" class="trans_200">discover more</a>
-					</div>
-				</div>
-
-				<div class="col-lg-4 icon_box_col">
-
-					<!-- Icon Box Item -->
-					<div class="icon_box_item">
-						<h2>Great team</h2>
-						<p>Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
-					</div>
-
-					<!-- Icon Box Item -->
-					<div class="icon_box_item">
-						<h2>Modern Design</h2>
-						<p>Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 icon_box_col">
-
-					<!-- Icon Box Item -->
-					<div class="icon_box_item">
-						<h2>Online Marketing</h2>
-						<p>Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
-					</div>
-
-					<!-- Icon Box Item -->
-					<div class="icon_box_item">
-						<h2>Easy to use</h2>
-						<p>Etiam euismod sapien nec est tempus consequat. Nullam eget pretium mi. Curabitur rhoncus finibus quam quis sodales.</p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Vertical Slider Section -->
-
-	<div class="v_slider_section">
-		<div class="container fill_height">
-			<div class="row fill_height">
-
-				<div class="col-lg-6 v_slider_section_image">
-					<div class="v_slider_image">
-						<img src="images/python.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="col-lg-5 offset-lg-1 v_slider_content d-flex flex-column justify-content-center">
-					<div class="v_slider_container">
-
-						<!-- Vertical Slider -->
-						<div class="v_slider">
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Vertical Slider Item -->
-							<div class="v_slider_item">
-								<h1>Fast support</h1>
-								<h1>to all our</h1>
-								<h1>clients. Just give</h1>
-								<h1>us a shout</h1>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-								<div class="person d-flex flex-row">
-									<div class="person_image">
-										<img src="images/person_1.png" alt="">
-									</div>
-									<div class="person_meta">
-										<div class="person_name">Michael Smith</div>
-										<div class="person_title">Manager</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Services -->
-
-	<div class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<div class="section_title">
-						<h1>RanGO. We take care of your business</h1>
-						<span>Explore our services</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="h_slider_container services_slider_container">
-			<div class="service_slider_outer">
-				<!-- Services Slider -->
-				<div class="owl-carousel owl-theme services_slider">
-					
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe083;" class="icon"></div>
-									</div>
-									<h2>Amazing service</h2>
-								</div>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vesti bul mattis effic iturut magna.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe059;" class="icon"></div>
-									</div>
-									<h2>Management</h2>
-								</div>
-								<p>Odio vestibulum est mattis effic iturut magna. Pellente sque sit am et tellus blandit. Etiam nec odio vesti bul.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe024;" class="icon"></div>
-									</div>
-									<h2>Risk Evaluation</h2>
-								</div>
-								<p>Odio vestibulum est mattis effic iturut magna. Pellente sque sit am et tellus blandit. Etiam nec odio vesti bul.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe05e;" class="icon"></div>
-									</div>
-									<h2>Assesment</h2>
-								</div>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus bla ndit. Etiam nec odio vestibul.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe059;" class="icon"></div>
-									</div>
-									<h2>Great team</h2>
-								</div>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus bla ndit. Etiam nec odio vestibul.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe040;" class="icon"></div>
-									</div>
-									<h2>Amazing service</h2>
-								</div>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vesti bul mattis effic iturut magna.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Services Slider Item-->
-					<div class="owl-item services_item">
-						<div class="services_item_inner">
-							<div class="service_item_content">
-								<div class="service_item_title">
-									<div class="service_item_icon">
-										<div data-icon="&#xe020;" class="icon"></div>
-									</div>
-									<h2>Amazing service</h2>
-								</div>
-								<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vesti bul mattis effic iturut magna.</p>
-								<div class="button service_item_button trans_200">
-									<a href="#" class="trans_200">discover more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			
-				<div class="services_slider_nav services_slider_nav_left"><i class="fas fa-chevron-left trans_200"></i></div>
-				<div class="services_slider_nav services_slider_nav_right"><i class="fas fa-chevron-right trans_200"></i></div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Features -->
-
-	<div class="features">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-
-					<div class="section_title">
-						<h1>Modern features</h1>
-					</div>
-
-				</div>
-			</div>
-			<div class="row features_row">
-
-				<div class="col-lg-4 text-lg-right features_col order-lg-1 order-2">
-					
-					<!-- Features Item-->
-					<div class="features_item">
-						<h2>Responsive</h2>
-						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.</p>
-					</div>
-
-					<!-- Features Item-->
-					<div class="features_item">
-						<h2>Clean code</h2>
-						<p>Nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus bla ndit.</p>
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 d-flex flex-column align-items-center order-lg-2 order-1">
-					<div class="features_image">
-						<img src="images/features.png" alt="">
-					</div>
-					<div class="button features_button trans_200">
-						<a href="#" class="trans_200">discover more</a>
-					</div>
-				</div>
-
-				<div class="col-lg-4 features_col order-lg-3 order-3">
-					
-					<!-- Features Item-->
-					<div class="features_item">
-						<h2>Retina ready</h2>
-						<p>Nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus bla ndit.</p>
-					</div>
-
-					<!-- Features Item-->
-					<div class="features_item">
-						<h2>Great team</h2>
-						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pel lentesque sit am et tellus.</p>
-					</div>
-
-					<div class="button features_button_2 trans_200">
-						<a href="#" class="trans_200">discover more</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Call to action -->
-
-	<div class="cta">
-		<div class="cta_background" style="background-image:url(images/cta_background.jpg)"></div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 order-lg-1 order-2">
-					<div class="cta_content">
-						<h1>We love our customers</h1>
-						<p>Cursus, enim a ultrices venenatis, ante magna varius felis, ac sodales turpis lectus a odio. Quisque facilisis lacus vitae leo tincidunt, id cursus dui blandit.</p>
-					</div>
-				</div>
-
-				<div class="col-lg-6 offset-lg-1 order-lg-2 order-1">
-					<div class="cta_image d-flex flex-column justify-content-end">
-						<img src="images/cta.png" alt="image by https://unsplash.com/@heysupersimi">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Text Line -->
-
-	<div class="text_line">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-5 text-lg-right text-center">
-					<div class="text_line_image">
-						<img src="images/line.jpg" alt="">
-					</div>
-				</div>
-
-				<div class="col-lg-5 offset-lg-2">
-					<div class="text_line_content">
-						<h1>We integrate the future</h1>
-						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.</p>
-						<div class="button text_line_button trans_200">
-							<a href="#" class="trans_200">discover more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Newsletter -->
-
-	<div class="newsletter">
-		<div class="container">
-			<div class="row">
-				<div class="col text-lg-center text-left">
-					<div class="newsletter_content">
-
-						<!-- Newsletter Title -->
-						<div class="newsletter_title">
-							<h1>Subscribe to our newsletter</h1>
-							<span>Cursus, enim a ultrices venenatis, ante magna varius.</span>
-						</div>
-						
-						<!-- Newsletter Form -->
-						<div class="newsletter_form_container">
-							<form action="#">
-								<div class="input-group">
-									<input type="email" class="newsletter_email" placeholder="Your e-mail address here" required="required" data-error="Valid email address is required.">
-									<button id="newsletter_form_submit" type="submit" class="button newsletter_submit_button trans_200" value="Submit">
-										subscribe
-									</button>
-								</div>
-									
-							</form>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
-
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-4">
-
-					<!-- Footer Intro -->
-					<div class="footer_intro">
-
-						<!-- Logo -->
-						<div class="logo footer_logo">
-							<a href="#">Ran<span>go</span></a>
-						</div>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
-						
-						<!-- Social -->
-						<div class="footer_social">
-							<ul>
-								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fab fa-behance"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-						
-						<!-- Copyright -->
-						<div class="footer_cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla está hecha con <i class="fa fa-heart" aria-hidden="true"></i>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-
-					</div>
-
-				</div>
-				
-				<!-- Footer Services -->
-				<div class="col-lg-2">
-
-					<div class="footer_col">
-						<div class="footer_col_title">Services</div>
-						<ul>
-							<li><a href="#">Social media</a></li>
-							<li><a href="#">Management</a></li>
-							<li><a href="#">Branding</a></li>
-						</ul>
-					</div>
-					
-					<div class="footer_col">
-						<div class="footer_col_title">Aditionals</div>
-						<ul>
-							<li><a href="#">Social media</a></li>
-							<li><a href="#">Management</a></li>
-							<li><a href="#">Branding</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<!-- Footer Menu -->
-				<div class="col-lg-2">
-
-					<div class="footer_col">
-						<div class="footer_col_title">Menu</div>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Testimonials</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<!-- Footer About -->
-				<div class="col-lg-2">
-
-					<div class="footer_col">
-						<div class="footer_col_title">About us</div>
-						<ul>
-							<li><a href="#">The team</a></li>
-							<li><a href="#">History</a></li>
-							<li><a href="#">Company</a></li>
-							<li><a href="#">Support</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<!-- Footer Community -->
-				<div class="col-lg-2">
-
-					<div class="footer_col">
-						<div class="footer_col_title">Community</div>
-						<ul>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Forums</a></li>
-							<li><a href="#">Q&A</a></li>
-							<li><a href="#">Purposes</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-				<div class="col">
-					<!-- Copyright -->
-					<div class="footer_cr_2">2017 All rights reserved</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-</div>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/slick-1.8.0/slick.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">DrLiTRosS</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/drlitross" class="google-plus"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>DrLiTRosS</h1>
+      <p>Yo soy <span class="typed" data-typed-items="Programador, Desarrollador, Freelancer, Autodidacta"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Sobre mí</h2>
+          <p>Hola, soy DrLiTRosS. Soy autodidacta y soy programador en Python. Soy experto en Bots, Web Scraping y Machine Learning. Experto en la automatización de tareas dificiles de Robotizar. Sigueme en mis redes sociales o contactame para contratarme o pedirme presupuesto.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Python y Desarrollador de Bots.</h3>
+            <p class="fst-italic">
+              Aquí un poco sobre mí. Lo que está claro que no quiero dar, no lo doy.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>+30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>drlitross.github.io</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>N/D</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Un lugar de la Mancha</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Grado Superior</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Especialidad:</strong> <span>PAMP</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>N/D</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              A través de las redes sociales que aparecen a la izquierda puedes encontrarme. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Hechos</h2>
+          <p>He trabajado para clientes de foros como Forobeta. En el sector adulto con Chaturbate, Bongacams, Livejasmin, Pornhub, etc. He trabajado como afiliado de Amazon y grandes Comercios Chinos como Aliexpress Bangood y otras. También he trabajado para clientes particulares y pequeñas empresas</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="124" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Clientes</strong> y afiliados</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="482" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Proyectos</strong> en pie</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="+2000" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Horas</strong> de soporte y aumentando</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Trabajadores</strong>, solamente yo</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Habilidades</h2>
+          <p>Estas son mis habilidades. Python es mi lenguaje de programación, pero no es de las únicas cualidades. Soy autodidacta, amante de la automatización y los detalles. Me gusta probar y replicar, la extracción de datos, la estadística y el machine learning.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Machine Learning <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Estadística <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resumen</h2>
+          <p>En este apartado os explico mi nivel de estudios y mi experiencia laboral.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumario</h3>
+            <div class="resume-item pb-0">
+              <h4>DrLiTRosS</h4>
+              <p><em>Desarrollador en Python desde 2009. 100% autodidacta</em></p>
+              <ul>
+                <li>La Mancha</li>
+                <li>Teléfono: N/D</li>
+                <li>Email: N/D</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Educación</h3>
+            <div class="resume-item">
+              <h4>Certificado de Profesionalidad en Programación de Aplicaciones Multiplataforma</h4>
+              <h5>2008 - 2010</h5>
+              <p><em>MPR</em></p>
+              <p>Curso de 1200 horas que realice entre los años 2008 y 2010, mientrar realizaba Grado en Empresas.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Certificado de Profesionalidad en Sistemas Microinformáticos</h4>
+              <h5>2011</h5>
+              <p><em>MPR</em></p>
+              <p>Curso de 600 horas que realice en el año 2011.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Experiencia Profesional</h3>
+            <div class="resume-item">
+              <h4>Programador en Python</h4>
+              <h5>2009 - Programador en Python</h5>
+              <p><em>Worldwide </em></p>
+              <ul>
+                <li>Desarrollo de trabajos en python.</li>
+                <li>Desarrollo de entornos de Machine Learning.</li>
+                <li>Creación de Bots para automatización de trabajos en PC, Servidores o Web.</li>
+                <li>Creación de Estadísticas Web. Analisis de Datos y Estructuras.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>SEO</h4>
+              <h5>2008 - Presente</h5>
+              <p><em>Worldwide</em></p>
+              <ul>
+                <li>Desarrollo de SEO dentro de sitio.</li>
+                <li>Desarrollo de SEO fuera de sitio.</li>
+                <li>Analisis de errores SEO.</li>
+                <li>Creación de plantillas de errores, que mejorar, que añadir, que quitar y recomendaciones para una mejora a los ojos de Google.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <p>Programación en Python, para estadísticas, scripts, bots o machine learning.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Tiempo de Trabajo</a></h4>
+            <p class="description">Mi trabajo es buscar una eficiencia a corto plazo, ahorro de costes y pensar en futuros problemas para que queden resueltos.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Listas</a></h4>
+            <p class="description">Me encantan las listas, el check y la entrega de la realización de un buen trabajo.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Estadísticas</a></h4>
+            <p class="description">Las estádisticas, nos dicen lo que buscan los usuarios y como mejorar nuestra calidad hacia ellos, haciendo que estos vuelvan, o que encuentren lo que buscan.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">SEO</a></h4>
+            <p class="description">Hay que poner empeño, no solo en nuestra página, si no en promocionarla de forma externa. Esto ayudará a los usuarios a encontrar un buen producto, con un buen servicio.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Éxito</a></h4>
+            <p class="description">Si se siguen todos los conceptos de lista que doy, su exito y el exito de su web y proyecto está garantizado.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Elijo</a></h4>
+            <p class="description">Elijo con quien trabajar, por ejemplo, no compito contra mi mismo. Si cojo un proyecto de un electricista de Bogota, no habrá otro eléctricista de Bogota que trabaje conmigo.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Puedes contactar conmigo, a través del formulario de abajo. Quitarme un poquito siempre es gratis.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Localización:</h4>
+                <p>España</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>N/D</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>N/D</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Asunto</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Mensaje</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DrLiTRosS</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
