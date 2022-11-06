@@ -804,6 +804,10 @@ section {
   background-color: #149ddd;
 }
 
+.headerlink {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1071,7 +1075,4 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
-}
-.headerlink {
-display: none;
 }
