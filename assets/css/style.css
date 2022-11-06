@@ -455,6 +455,10 @@ section {
   position: relative;
 }
 
+.anchor {
+  display: none;
+}
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
